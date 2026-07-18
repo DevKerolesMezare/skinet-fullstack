@@ -57,61 +57,57 @@ Total Time Study [1h 30min]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:                   3:29 PM 7/15/2026
+  
 
-rest :
-start:
-total rest:
-
-description:        |       [Net Time =   ]
+description:    18   |   22   [Net Time =  30min ]
 
 
-end :
+end :                  4:29 PM 7/15/2026
 
 
-Total Time Study [ ]
+Total Time Study [1h]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:                    1:36 PM 7/17/2026
 
-rest :
-start:
-total rest:
-
-description:        |       [Net Time =   ]
+>>>>> Bad Internet 🤦‍♂️. 
+>>>>> Bad Internet 🤦‍♂️. 
+>>>>> Bad Internet 🤦‍♂️. 
 
 
-end :
+description:      23      [Net Time =  12min ]
 
 
-Total Time Study [ ]
+end :               2:23 PM 7/17/2026
+
+
+Total Time Study [20 min]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:
-
-rest :
-start:
-total rest:
-
-description:        |       [Net Time =   ]
+start:                   10:53 AM 7/18/2026
 
 
-end :
+description:    24    |   27    ["End of section 3"   Net Time =  18min]
 
 
-Total Time Study [ ]
+end :                    11:30 AM 7/18/2026
+
+
+Total Time Study [37 min]
 ------------------------------------------------------------------
+
 
 
 
