@@ -48,7 +48,7 @@ public class ProductRepository(StoreContext context) : IProductRepository
                 _ => query.OrderBy(x => x.Name)
             };
         }
-
+        
 
         return await query.ToListAsync();
     }
