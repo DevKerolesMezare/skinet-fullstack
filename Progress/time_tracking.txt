@@ -199,22 +199,17 @@ Total Time Study [1h 15min ]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:                 1:00 PM 7/24/2026
 
-rest :
-start:
-total rest:
+rest :                  1:31 PM 7/24/2026(Bad Internet🌎)
 
-description:        |       [Net Time =   ]
+description:   56   |  62  ["End of section 7"  Net Time  = 48min  ]
 
 
-end :
-
-
-Total Time Study [ ]
+Total Time Study [50 - 55 min]
 ------------------------------------------------------------------
 
 
