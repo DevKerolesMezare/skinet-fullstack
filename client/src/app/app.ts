@@ -1,25 +1,15 @@
-import { Component, inject, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, signal } from '@angular/core';
 import { HeaderComponent } from './layout/header/header.component';
-import { HttpClient } from '@angular/common/http';
+
+import { ShopComponent } from "./features/shop/shop.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [ HeaderComponent, ShopComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('Skinet');
 
-
-  // sample test
-  baseUrl = 'https://localhost:5001/api/';
-  private http = inject(HttpClient);
-
-  constructor() {
-    this.http.get(this.baseUrl + 'Products').subscribe({
-      next: (res) => console.log(res),
-    });
-  }
 }

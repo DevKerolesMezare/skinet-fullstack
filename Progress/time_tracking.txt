@@ -238,7 +238,7 @@ rest :                12:46 PM 7/26/2026(Bad Internet🌎)
 start:               12:59 PM 7/26/2026
 total rest:  18min 
 
-description:        |        ["End of section 8"  Net Time  = 54min  ]
+description:    67    |  73      ["End of section 8"  Net Time  = 54min  ]
 
 
 end :               1:24 PM 7/26/2026
@@ -248,60 +248,56 @@ Total Time Study [1h]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:                     12:25 PM 7/27/2026
 
-rest :
-start:
-total rest:
+rest :                     1:11 PM 7/27/2026                        1:34 PM 7/27/2026(Lunch)
+start:                    1:18 PM 7/27/2026                        2:10 PM 7/27/2026
+total rest: 43min                                                
 
-description:        |       [Net Time =   ]
+description:   74     |    80   [Net Time =   48min]
+
+end :                    2:50 PM 7/27/2026     
 
 
-end :
-
-
-Total Time Study [ ]
+Total Time Study [1h 42min]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:                 12:20 PM 7/28/2026
 
-rest :
-start:
-total rest:
+rest :                12:55 PM 7/28/2026(Bad Internet🌎)
+start:                1:30 PM 7/28/2026
+total rest: 35mim
 
-description:        |       [Net Time =   ]
-
-
-end :
+description:    81    |    83   [Net Time =   27min]
 
 
-Total Time Study [ ]
+end :                  2:10 PM 7/28/2026
+
+
+Total Time Study [1h 15min]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:
-
-rest :
-start:
-total rest:
-
-description:        |       [Net Time =   ]
+start:                    12:19 PM 7/30/2026
 
 
-end :
+description:     84   |  86     ["End of section 9"  Net Time =  22min ]
 
 
-Total Time Study [ ]
+end :                   1:24 PM 7/30/2026
+
+
+Total Time Study [1h 5min]
 ------------------------------------------------------------------
 
 
