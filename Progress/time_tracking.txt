@@ -301,22 +301,17 @@ Total Time Study [1h 5min]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:         2:40 PM 7/31/2026
 
-rest :
-start:
-total rest:
+description:    87    |   92    ["End of section 10"  Net Time =  34min ]
 
-description:        |       [Net Time =   ]
+end :         3:50 PM 7/31/2026
 
 
-end :
-
-
-Total Time Study [ ]
+Total Time Study [1h 10min]
 ------------------------------------------------------------------
 
 
