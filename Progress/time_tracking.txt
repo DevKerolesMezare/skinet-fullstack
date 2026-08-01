@@ -316,21 +316,22 @@ Total Time Study [1h 10min]
 
 
 
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:                 2:50 PM 8/1/2026
 
-rest :
-start:
-total rest:
+rest :                 3:50 PM 8/1/2026
+start:                4:10 PM 8/1/2026
+total rest: 20min
 
-description:        |       [Net Time =   ]
-
-
-end :
+description:     93    |    104   ["End of section 11"  Net Time = 1h 5min]
 
 
-Total Time Study [ ]
+end :                5:45 PM 8/1/2026
+
+
+Total Time Study [2h 35min]
 ------------------------------------------------------------------
 
 

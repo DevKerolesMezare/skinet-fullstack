@@ -1,21 +1,45 @@
 @use '@angular/material' as mat;
 
-
-
 :root {
-  @include mat.button-overrides((
-    filled-container-shape: 6px,
-    outlined-container-shape: 6px,
-  ));
-  @include mat.badge-overrides((
-    background-color: blue,
-  ));
+  @include mat.button-overrides(
+    (
+      filled-container-shape: 6px,
+      outlined-container-shape: 6px,
+    )
+  );
+  @include mat.badge-overrides(
+    (
+      background-color: blue,
+    )
+  );
 }
 
-
-.match-input-height{
+.match-input-height {
   height: var(--mat-form-field-cotainer-height) !important;
 }
+
+.snack-error {
+  @include mat.snack-bar-overrides(
+    (
+      button-color: white,
+      container-color: red,
+    )
+  );
+}
+
+
+
+.snack-success {
+  @include mat.snack-bar-overrides(
+    (
+      button-color: white,
+      container-color: green  ,
+      supporting-text-color: white,
+    )
+  );
+}
+
+
 
 
 

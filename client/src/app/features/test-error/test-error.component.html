@@ -1,0 +1,23 @@
+<div class="d-flex flex-wrap gap-3">
+  <button mat-raised-button color="primary" (click)="get400Error()">400 Bad Request</button>
+
+  <button mat-raised-button color="accent" (click)="get401Error()">401 Unauthorized</button>
+
+  <button mat-raised-button color="warn" (click)="get404Error()">404 Not Found</button>
+
+  <button mat-raised-button color="warn" (click)="get500Error()">500 Internal Server Error</button>
+
+  <button mat-stroked-button color="primary" (click)="get400ValidationError()">
+    400 Validation Error
+  </button>
+</div>
+
+@if (validationErors()) {
+  <div class="mx-auto max-w-lg mt-5 bg-red-100">
+    <ul class="space-y-2 p-2">
+      @for (error of validationErors(); track $index) {
+        <li class="text-red-800">{{ error }}</li>
+      }
+    </ul>
+  </div>
+}
