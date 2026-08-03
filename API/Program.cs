@@ -1,9 +1,11 @@
 using System.Collections.Concurrent;
 using System.ComponentModel.Design.Serialization;
+using StackExchange.Redis;
 using API.Meddleware;
 using Core.Interfases;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,12 +17,25 @@ builder.Services.AddDbContext<StoreContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped(
     typeof(IGenericRepository<>),
     typeof(GenericRepository<>)
 );
 builder.Services.AddCors();
+
+builder.Services.AddSingleton<IConnectionMultiplexer>(c =>
+{
+    var connString = builder.Configuration.GetConnectionString("Redis");
+    if (string.IsNullOrEmpty(connString))
+    {
+        throw new InvalidOperationException("Redis connection string is not configured.");
+    }
+    var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis"), true);
+    return ConnectionMultiplexer.Connect(configuration);
+});
+builder.Services.AddScoped<ICartService, CartService>();
 
 
 
