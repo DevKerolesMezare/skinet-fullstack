@@ -394,43 +394,44 @@ day
 Task :
 start:                12:26 PM 8/7/2026
 
-description:   122   |   129    ["End of section 12" Net Time =   44min]
+description:   122   |   129    ["End of section 13" Net Time =   44min]
 
 
 Total Time Study [2h]
 ------------------------------------------------------------------
 
 
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:               1:10 PM 8/8/2026
 
-rest :
-start:
-total rest:
+rest :               2:40 PM 8/8/2026                  2:54 PM 8/8/2026(النور قطع)
+start:              2:46 PM 8/8/2026                  4:00 PM 8/8/2026
+total rest:  1h 12min
 
-description:        |       [Net Time =   ]
+description:      130  |  136    [Net Time =   55min]
 
-end :
+end :                  4:47 PM 8/8/2026
 
-Total Time Study [ ]
+Total Time Study [2h 25min]
 ------------------------------------------------------------------
 
 
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:             10:20 AM 8/9/2026
 
-rest :
-start:
-total rest:
+rest :         5min   
 
-description:        |       [Net Time =   ]
+description:    137    |    141   ["End of section 14" Net Time =  29min ]
 
-end :
+end :            11:32 AM 8/9/2026
 
-Total Time Study [ ]
+Total Time Study [67 min]
 ------------------------------------------------------------------
+
 
 
 -------------------------------------------------------------------
