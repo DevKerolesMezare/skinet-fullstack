@@ -4,7 +4,7 @@ namespace Core.Interfases;
 
 public interface ISpecification<T>
 {
-    Expression<Func<T, bool>> Criteria { get; }
+    Expression<Func<T, bool>>? Criteria { get; }
     Expression<Func<T, object>>? orderBy { get; }
     Expression<Func<T, object>>? OrderByDescending { get; }
 

@@ -23,15 +23,13 @@
       </dl>
     </div>
 
-    <div>
+    @if (location.path() !== '/checkout') {
       <div class="flex flex-col gap-2">
-        <!-- <button (click)="checkout()" mat-flat-button>Checkout</button> -->
         <button routerLink="/checkout" mat-flat-button>Checkout</button>
         <button routerLink="/shop" mat-button>Continue Shopping</button>
       </div>
-    </div>
+    }
   </div>
-
   <div class="space-y-4 rounded-lg border border-gray-200 bg-white shadow-sm">
     <form class="space-y-2 flex flex-col p-2">
       <label class="mb-2 block text-sm !font-medium">Do you have a voucher code?</label>

@@ -482,116 +482,98 @@ Total Time Study [1h]
 ------------------------------------------------------------------
 
 
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:         12:45 PM 8/13/2026
 
-rest :
-start:
-total rest:
+description:   60     |   62    [Net Time = 25min]
 
-description:        |       [Net Time =   ]
+end :         1:35 PM 8/13/2026(Bad Internet 🌎)
 
-end :
-
-Total Time Study [ ]
+Total Time Study [50min]
 ------------------------------------------------------------------
 
 
--------------------------------------------------------------------
+day
+-------------------------------------------------------------
 Task :
-start:
+start:           1:17 PM 8/15/2026
 
-rest :
-start:
-total rest:
+description:    63    |    65   [Net Time =   31min]
 
-description:        |       [Net Time =   ]
-
-end :
-
-Total Time Study [ ]
+Total Time Study [1h]
 ------------------------------------------------------------------
 
 
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:               3:30 PM 8/16/2026
 
-rest :
-start:
-total rest:
 
-description:        |       [Net Time =   ]
+description:     66  [Net Time = 15min ]
 
-end :
+end :             3:55 PM 8/16/2026
 
-Total Time Study [ ]
+Total Time Study [25min]
 ------------------------------------------------------------------
 
 
+الفترة الي فاتت كان الاب توب مش شغال
+
+	"come back"
+
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:                   3:55 PM 8/29/2026
 
-rest :
-start:
-total rest:
+rest :                    5:14 PM 8/29/2026
+start:                   5:34 PM 8/29/2026
+total rest:           20min
 
-description:        |       [Net Time =   ]
+description:    67    |   172    [Net Time =  55min]
 
-end :
+end :                  6:20 PM 8/29/2026
 
-Total Time Study [ ]
-------------------------------------------------------------------
-
-
--------------------------------------------------------------------
-Task :
-start:
-
-rest :
-start:
-total rest:
-
-description:        |       [Net Time =   ]
-
-end :
-
-Total Time Study [ ]
-------------------------------------------------------------------
-
-
--------------------------------------------------------------------
-Task :
-start:
-
-rest :
-start:
-total rest:
-
-description:        |       [Net Time =   ]
-
-end :
-
-Total Time Study [ ]
+Total Time Study [2h  5min] 🎉
 ------------------------------------------------------------------
 
 
 
+day
 -------------------------------------------------------------------
 Task :
-start:
+start:                2:27 PM 8/30/2026
 
-rest :
-start:
-total rest:
+rest :                 3:27 PM 8/30/2026
+start:                4:01 PM 8/30/2026
+total rest:   34 min
 
-description:        |       [Net Time =   ]
+description:    173    |    177   [Net Time =   40min]
 
-end :
+end :               4:27 PM 8/30/2026
 
-Total Time Study [ ]
+Total Time Study [1h 26min]
+------------------------------------------------------------------
+
+
+
+day
+-------------------------------------------------------------------
+Task :
+start:                       4:11 PM 8/31/2026
+
+rest :                       4:44 PM 8/31/2026
+start:                      5:15 PM 8/31/2026
+total rest:   31 min
+
+description:     178   |   183    ["End of section 16"  Net Time =   46min]
+
+end :                    6:20 PM 8/31/2026
+
+Total Time Study [1h 38min]
 ------------------------------------------------------------------
 
 
