@@ -24,8 +24,8 @@ builder.Services.AddScoped(
     typeof(IGenericRepository<>),
     typeof(GenericRepository<>)
 );
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddCors();
-
 builder.Services.AddSingleton<IConnectionMultiplexer>(c =>
 {
     var connString = builder.Configuration.GetConnectionString("Redis");
