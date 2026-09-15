@@ -5,7 +5,7 @@ import { Injectable, signal } from '@angular/core';
 })
 export class BusyService {
   loading = signal(false);
-  private busyRequestCount = 0;
+  public busyRequestCount = 0;
 
   busy() {
     this.busyRequestCount++;

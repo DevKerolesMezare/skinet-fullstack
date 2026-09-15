@@ -11,6 +11,7 @@ import { MatListOption, MatSelectionList, MatSelectionListChange } from '@angula
 import { ShopParams } from '../../shared/models/shopParams';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
+import { EmptyStateComponent } from '../../shared/components/empty-state/empty-state.component';
 
 @Component({
   selector: 'app-shop',
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     MatMenuTrigger,
     MatPaginator,
     FormsModule,
-    MatIconButton
+    MatIconButton,
+    EmptyStateComponent
 ],
   templateUrl: './shop.component.html',
   styleUrls: ['./shop.component.scss'],
@@ -32,6 +34,7 @@ import { FormsModule } from '@angular/forms';
 export class ShopComponent implements OnInit {
   private shopService = inject(ShopService);
   private dialogService = inject(MatDialog);
+
   products = signal<Pagination<Product> | null>(null);
 
   sortOptions = [
@@ -50,6 +53,11 @@ export class ShopComponent implements OnInit {
   initializeShop() {
     this.shopService.getBrands();
     this.shopService.getTypes();
+    this.getProducts();
+  }
+
+  resetFilters() {
+    this.shopParams = signal(new ShopParams());
     this.getProducts();
   }
 

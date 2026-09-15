@@ -660,33 +660,241 @@ Total Time Study [2h 20min]
 
 
 -------------------------------------------------------------------
+Task : 
+start:                    5:30 PM 9/14/2026
+  
+rest :                  
+
+description:   213     |     215  [Net Time =   25min]
+
+end :                  6:10 PM 9/14/2026 
+
+Total Time Study [40min]
+------------------------------------------------------------------
+
+
+
+day
+-------------------------------------------------------------------
 Task :
-start:
+start:           1:55 PM 9/15/2026
 
-rest :
-start:
-total rest:
+rest :            2:20 PM 9/15/2026
+start:           2:35 PM 9/15/2026
+total rest:    5 + 15 = 20min
 
-description:        |       [Net Time =   ]
+description:    216    |   220    [Net Time =  40min ]
+Note: I don't have a credit card that Azure accepts.
 
-end :
 
-Total Time Study [ ]
+end :             3:00 PM 9/15/2026
+
+Total Time Study [45min]
+------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Task :
+start:            9:40 PM 9/15/2026
+   
+rest :            10:30 PM 9/15/2026
+start:           10:38 PM 9/15/2026
+total rest:   8 > 10min
+
+description:    221    |   225    ["End of Section 19 - Without Publishing"  Net Time =  41min ]
+
+
+end :            11:05 PM 9/15/2026
+
+Total Time Study [1h 15min]
 ------------------------------------------------------------------
 
 
 
 -------------------------------------------------------------------
 Task :
-start:
+start:      
+   
+rest :            
+start:     
+total rest:   
 
-rest :
-start:
-total rest:
+description:       [Net Time =   ]
 
-description:        |       [Net Time =   ]
 
-end :
+end :      
 
-Total Time Study [ ]
+Total Time Study []
+------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
+------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------
+Task :
+start:      
+   
+rest :            
+start:     
+total rest:   
+
+description:       [Net Time =   ]
+
+
+end :      
+
+Total Time Study []
 ------------------------------------------------------------------
