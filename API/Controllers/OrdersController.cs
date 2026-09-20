@@ -54,6 +54,7 @@ public class OrdersController(ICartService cartService, IUnitOfWork unit) : Base
 
         if (deliveryMethod == null) return BadRequest($"Delivery method with id {orderDTO.DeliveryMethodId} not found");
 
+
         var order = new Order
         {
             OrderItems = itmes,
@@ -62,7 +63,8 @@ public class OrdersController(ICartService cartService, IUnitOfWork unit) : Base
             ShippingAddress = orderDTO.ShippingAddress,
             Subtotal = itmes.Sum(item => item.Price * item.Quantity),
             PaymentSummary = orderDTO.PaymentSummary,
-            PaymentIntentId = cart.PaymentIntenId
+            PaymentIntentId = cart.PaymentIntenId,
+            Status = OrderStatus.PaymentReceived
         };
 
         unit.Repository<Order>().Add(order);

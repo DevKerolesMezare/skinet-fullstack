@@ -5,6 +5,7 @@ import { Cart, CartItem } from '../../shared/models/cart';
 import { Product } from '../../shared/models/Product';
 import { map } from 'rxjs/internal/operators/map';
 import { DeliveryMethod } from '../../shared/models/deliveryMethod';
+import { firstValueFrom, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -45,26 +46,23 @@ export class CartService {
   }
 
   setCart(cart: Cart) {
-    return this.http.post<Cart>(this.baserUrl + 'cart', cart).subscribe({
-      next: (cart) => {
+    return this.http.post<Cart>(this.baserUrl + 'cart', cart).pipe(
+      tap((cart) => {
         this.cart.set(cart);
-      },
-      error: (error) => {
-        console.log(error);
-      },
-    });
+      }),
+    );
   }
 
-  addItemToCart(item: CartItem | Product, quantity = 1) {
+  async addItemToCart(item: CartItem | Product, quantity = 1) {
     const currentCart = this.cart() ?? this.CreateCart();
     if (this.isProduct(item)) {
       item = this.mapProductToCartItem(item);
     }
     currentCart.items = this.addOrUpdateItem(currentCart.items, item, quantity);
-    this.setCart(currentCart);
+    await firstValueFrom(this.setCart(currentCart));
   }
 
-  removeItemFromCart(productId: number, quantity = 1) {
+  async removeItemFromCart(productId: number, quantity = 1) {
     const cart = this.cart();
     if (!cart) return;
 
@@ -79,7 +77,7 @@ export class CartService {
       if (cart.items.length === 0) {
         this.deleteCart();
       } else {
-        this.setCart(cart);
+        await firstValueFrom(this.setCart(cart));
       }
     }
   }

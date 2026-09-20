@@ -11,12 +11,14 @@ import { BusyService } from '../../core/services/busy.service';
 import { CartService } from '../../core/services/cart.service';
 import { AccountService } from '../../core/services/account.service';
 import { MatIcon } from '@angular/material/icon';
-
+import { IsAdmin } from '../../shared/directives/is-admin';
 
 
 @Component({
   selector: 'app-header',
-  imports: [MatIcon, MatButton, MatBadge, RouterLink, RouterLinkActive, MatProgressBar, MatMenuTrigger, MatMenu, MatMenuItem, MatDivider],
+  imports: [MatIcon, MatButton, MatBadge,
+     RouterLink, RouterLinkActive, MatProgressBar,
+      MatMenuTrigger, MatMenu, MatMenuItem, MatDivider, IsAdmin],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
