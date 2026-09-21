@@ -777,21 +777,21 @@ Total Time Study [1h]
 ------------------------------------------------------------------
 
 
-
+day
 -------------------------------------------------------------------
 Task :
-start:      
+start:                2:37 PM 9/21/2026
    
-rest :            
-start:     
-total rest:   
+rest :                3:07 PM 9/21/2026
+start:               3:15 PM 9/21/2026
+total rest:   8 + 10 >>> 18min
 
-description:       [Net Time =   ]
+description:  243 | 249   ["End of section 22" Net Time =  56 ]
 
 
-end :      
+end :                 4:45 PM 9/21/2026
 
-Total Time Study []
+Total Time Study [1h 50min]
 ------------------------------------------------------------------
 
 

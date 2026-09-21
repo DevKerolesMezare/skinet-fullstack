@@ -19,7 +19,6 @@ import { AdminService } from '../../../core/services/admin.service';
     PaymentCardPipe,
     DatePipe,
     CurrencyPipe,
-    RouterLink,
   ],
   templateUrl: './order-detailed.component.html',
   styleUrl: './order-detailed.component.scss',

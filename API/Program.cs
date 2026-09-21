@@ -35,10 +35,12 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(c =>
     {
         throw new InvalidOperationException("Redis connection string is not configured.");
     }
-    var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis"), true);
+    var configuration = ConfigurationOptions.Parse(connString, true);
     return ConnectionMultiplexer.Connect(configuration);
 });
-builder.Services.AddScoped<ICartService, CartService>();
+
+builder.Services.AddSingleton<ICartService, CartService>();
+builder.Services.AddSingleton<IResponseChacheService, ResponseChacheService>();
 
 builder.Services.AddAuthorization();
 builder.Services.AddIdentityApiEndpoints<AppUser>()
