@@ -58,7 +58,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
     delivery: false,
   });
 
-  confirmationToken?: ConfirmationToken;
+  confirmationToken = signal<ConfirmationToken | undefined>(undefined) ;
 
   constructor() {
     this.handleAddressChange = this.handleAddressChange.bind(this);
@@ -106,7 +106,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
 
         if (result.error) throw new Error(result.error.message);
 
-        this.confirmationToken = result.confirmationToken;
+        this.confirmationToken.set(result.confirmationToken) ;
         console.log(this.confirmationToken);
       }
     } catch (error: any) {
@@ -133,7 +133,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
     this.loading.set(true);
     try {
       if (this.confirmationToken) {
-        const result = await this.stripeService.confirmPayment(this.confirmationToken);
+        const result = await this.stripeService.confirmPayment(this.confirmationToken()!);
 
         if (result.paymentIntent?.status === 'succeeded') {
           const orderModel = await this.createOrderModel();
@@ -163,7 +163,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
   private async createOrderModel(): Promise<OrderToCreate> {
     const cart = this.cartService.cart();
     const shippingAddress = (await this.getAddressFromStripeAddress()) as ShippingAddress;
-    const card = this.confirmationToken?.payment_method_preview.card;
+    const card = this.confirmationToken()?.payment_method_preview.card;
 
     if (!cart || !shippingAddress || !card) {
       throw new Error('Missing required information to create order model');

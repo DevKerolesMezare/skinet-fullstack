@@ -77,7 +77,13 @@ public class PaymentsController(IPaymentService paymentService,
             var order = await unit.Repository<Core.Entities.OrderAggregate.Order>().GetEntityWithSpec(spec)
                 ?? throw new Exception("Order not found");
 
-            if ((long)order.GetTotal() * 100 != (long)intent.Amount)
+
+            var orderTotalInCents =
+                (long)Math.Round(
+                    order.GetTotal() * 100,
+                    MidpointRounding.AwayFromZero);
+
+            if (orderTotalInCents != intent.Amount)
             {
                 order.Status = OrderStatus.PaymentMismatch;
             }
@@ -85,7 +91,9 @@ public class PaymentsController(IPaymentService paymentService,
             {
                 order.Status = OrderStatus.PaymentReceived;
             }
+
             await unit.Complete();
+
 
             var connectionId = NotificationHub.GetConnectionIdByEmail(order.BuyerEmail);
 
