@@ -2,4 +2,5 @@
   <Project Path="API/API.csproj" />
   <Project Path="Core/Core.csproj" />
   <Project Path="Infrastructure/Infrastructure.csproj" />
+  <Project Path="Skinet.UnitTests/Skinet.UnitTests.csproj" />
 </Solution>
